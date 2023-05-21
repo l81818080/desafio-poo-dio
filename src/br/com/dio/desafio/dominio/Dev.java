@@ -41,11 +41,11 @@ public class Dev {
     }
 
     public Set<Conteudo> getConteudoInscritos() {
-        return conteudoInscritos;
+        return conteudosInscritos;
     }
 
     public void setConteudoInscritos(Set<Conteudo> conteudoInscritos) {
-        this.conteudoInscritos = conteudoInscritos;
+        this.conteudosInscritos = conteudoInscritos;
     }
 
     public Set<Conteudo> getConteudosConcluidos() {
@@ -61,11 +61,11 @@ public class Dev {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Dev dev = (Dev) o;
-        return Objects.equals(nome, dev.nome) && Objects.equals(conteudoInscritos, dev.conteudoInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
+        return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, conteudoInscritos, conteudosConcluidos);
+        return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
 }
